@@ -96,8 +96,11 @@ const init = () => {
 };
 
 // Podría importarse un catalogo inicial. 
-const TheHobbit = new Book("The Hobbit", "J.R.R. Tolkien", "295", false);
-let catalogue = [TheHobbit];
+const TheHobbit = new Book("The Hobbit", "J.R.R. Tolkien", "295", true);
+const Rules = new Book("12 Rules for life", "Dr. Jordan Peterson", "295", true);
+const CleanCode = new Book("Clean Code", "Robert C. Martin", "363", false);
+const DeepWork = new Book("Deep Work", "Cal Newport", "312", true);
+let catalogue = [TheHobbit, Rules, CleanCode, DeepWork];
 
 init();
 eventos();
